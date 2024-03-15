@@ -1,0 +1,39 @@
+{
+  "name": "project-dominate-apis",
+  "version": "0.0.1",
+  "description": "APIs to support Sancus Digital",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "tsc -w",
+    "lint": "tslint '*.ts'",
+    "deploy": "sls deploy"
+  },
+  "keywords": [],
+  "author": "Harmanjit Singh",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.504.0",
+    "@aws-sdk/client-dynamodb": "^3.504.0",
+    "@aws-sdk/lib-dynamodb": "^3.504.0",
+    "@aws-sdk/client-textract": "^3.504.0",
+    "string-similarity": "^4.0.4",
+    "@aws-sdk/util-utf8-node": "^3.259.0",
+    "@google-cloud/documentai": "^8.2.0",
+    "google-auth-library": "^9.6.3"
+  },
+  "devDependencies": {
+    "@aws-sdk/credential-providers": "^3.504.1",
+    "@types/node": "^18.15.3",
+    "@types/aws-lambda": "^8.10.129",
+    "serverless": "^3.38.0",
+    "@types/serverless": "^3.12.18",
+    "serverless-offline": "^13.3.2",
+    "serverless-plugin-typescript": "^2.1.5",
+    "typescript": "^5.3.2",
+    "ts-node": "^10.9.1",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "@types/jest": "^29.5.11"
+  }
+}
